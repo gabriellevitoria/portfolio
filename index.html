@@ -1,0 +1,324 @@
+<!doctype html>
+<!--
+  ============================================================
+  PORTFÓLIO — Gabrielle  |  UX/UI Designer
+  Arquivo único (HTML + CSS + JS). Sem build. Sobe na VPS.
+  ------------------------------------------------------------
+  COMO EDITAR:
+  • Bilíngue: cada texto tem <span class="pt">…</span> e
+    <span class="en">…</span> lado a lado. Edite os dois.
+  • FOTOS: salve na MESMA pasta deste arquivo:
+      gabrielle-retrato.jpg  → foto do hero (rosto)
+      gabrielle-quadro.jpg   → foto do sobre (você no quadro)
+    (troque os src dos <img> se usar outro nome/pasta)
+  • Seus dados: procure por  EDITAR:  no HTML.
+  ============================================================
+-->
+<html lang="pt" data-lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabrielle — UX/UI Designer</title>
+  <meta name="description" content="Portfólio de Gabrielle, designer de UX/UI. Produtos digitais com rigor de sistema." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- cursor custom -->
+  <div class="cur cur--ring" aria-hidden="true"></div>
+  <div class="cur cur--dot" aria-hidden="true"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav">
+    <div class="wrap nav__in">
+      <!-- EDITAR: iniciais / wordmark -->
+      <a class="brand" href="#top">Gabrielle<b>.</b></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#work"><span class="pt">Projetos</span><span class="en">Work</span></a>
+        <a href="#about"><span class="pt">Sobre</span><span class="en">About</span></a>
+        <!-- EDITAR: link do seu CV em PDF -->
+        <a class="nav__cv" data-magnetic href="#" target="_blank" rel="noopener">CV</a>
+        <span class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set="pt" aria-pressed="true">PT</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+        </span>
+      </nav>
+      <button class="nav__burger" aria-label="Menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero wrap">
+      <div class="mono hero__eyebrow reveal">UX/UI Designer · São Paulo, BR · 2026</div>
+      <div class="hero__grid">
+        <div data-stagger>
+          <h1 class="reveal">
+            <span class="pt">Oi, sou a Gabrielle —<br>designer de UX/UI que<br>pensa em <em>sistemas</em>.</span>
+            <span class="en">Hi, I'm Gabrielle —<br>a UX/UI designer who<br>thinks in <em>systems</em>.</span>
+          </h1>
+          <p class="hero__sub reveal">
+            <span class="pt">Do fluxo à tela final: interfaces de fintech, saúde e e-commerce com rigor de sistema e sensibilidade de design.</span>
+            <span class="en">From flow to final screen: fintech, health and e-commerce interfaces built with system rigor and design sensibility.</span>
+          </p>
+          <div class="status reveal">
+            <span class="mono"><i class="dot"></i>
+              <span class="pt">Disponível para freelance</span>
+              <span class="en">Available for freelance</span>
+            </span>
+            <span class="mono" id="clock" aria-live="off">— : —</span>
+          </div>
+        </div>
+        <!-- FOTO: salve seu retrato como  gabrielle-retrato.jpg  nesta pasta -->
+        <div class="hero__portrait reveal">
+          <img src="assets/img/gabrielle-retrato.jpg" alt="Retrato de Gabrielle" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CLIENTS ======================= -->
+    <section class="clients">
+      <span class="clients__lead">
+        <span class="mono">
+          <span class="pt">Contextos onde entreguei design</span>
+          <span class="en">Where I've delivered design</span>
+        </span>
+      </span>
+      <!-- EDITAR: nomes de clientes/empresas (o marquee duplica sozinho) -->
+      <div class="marquee">
+        <div class="marquee__track" data-marquee>
+          <span class="name">MoveEdu</span>
+          <span class="name">Vivelon</span>
+          <span class="name">PreparaIA</span>
+          <span class="name">FATEC</span>
+          <span class="name">Design Circuit</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERVICES ======================= -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <h2>
+            <span class="pt">O que eu posso fazer por você</span>
+            <span class="en">What I can do for you</span>
+          </h2>
+          <span class="mono">03 <span class="pt">frentes</span><span class="en">tracks</span></span>
+        </div>
+        <div class="svc" data-stagger>
+          <div class="svc__item reveal">
+            <div class="svc__no">01</div>
+            <h3><span class="pt">Product & UX/UI</span><span class="en">Product & UX/UI</span></h3>
+            <p>
+              <span class="pt">Pesquisa, fluxos, wireframes e telas em alta fidelidade. Do problema ao protótipo testável.</span>
+              <span class="en">Research, flows, wireframes and high-fidelity screens. From problem to testable prototype.</span>
+            </p>
+          </div>
+          <div class="svc__item reveal">
+            <div class="svc__no">02</div>
+            <h3><span class="pt">Design Systems</span><span class="en">Design Systems</span></h3>
+            <p>
+              <span class="pt">Tokens, componentes e handoff pra dev no Figma — consistência que escala.</span>
+              <span class="en">Tokens, components and dev handoff in Figma — consistency that scales.</span>
+            </p>
+          </div>
+          <div class="svc__item reveal">
+            <div class="svc__no">03</div>
+            <h3><span class="pt">Automação & Ops</span><span class="en">Automation & Ops</span></h3>
+            <p>
+              <span class="pt">n8n, CRM (Movidesk) e pipelines de dados (Power BI). Design que também roda por baixo.</span>
+              <span class="en">n8n, CRM (Movidesk) and data pipelines (Power BI). Design that also runs under the hood.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= WORK ======================= -->
+    <section class="section section--alt" id="work">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <h2>
+            <span class="pt">Seleção de projetos</span>
+            <span class="en">Selected work</span>
+          </h2>
+          <span class="mono">2024 — 2025</span>
+        </div>
+
+        <!--
+          COMO COLOCAR TELAS REAIS NAS CAPAS:
+          Dentro de cada .mock__scr troque o <div class="ph ..."></div>
+          por  <img src="assets/img/telas/vivelon-home.jpg" alt="">
+          (crie uma subpasta "telas" ao lado deste arquivo).
+        -->
+        <div class="cases" data-stagger>
+
+          <!-- PROJETO 01 — Vivelon (e-commerce web) -->
+          <article class="case reveal">
+            <a class="case__cover" href="vivelon.html" aria-label="Vivelon">
+              <div class="stage">
+                <div class="mock mock--web" style="--x:-8%;--y:-6%;--r:-3deg;--hx:-13%;--hr:-4deg;z-index:1">
+                  <div class="mock__scr"><div class="ph g-vivelon"></div></div>
+                </div>
+                <div class="mock mock--phone" style="--x:28%;--y:12%;--r:6deg;--hx:36%;--hr:9deg;z-index:2">
+                  <div class="mock__scr"><div class="ph g-vivelon"></div></div>
+                </div>
+              </div>
+            </a>
+            <div class="case__info">
+              <div>
+                <span class="case__no">01</span>
+                <h3 class="case__title">Vivelon <span class="case__arrow">↗</span></h3>
+                <p class="case__desc">
+                  <span class="pt">E-commerce de suplementos para o mercado português: Home, PDP, login e conta, além do programa de fidelidade ViveStars.</span>
+                  <span class="en">Supplements e-commerce for the Portuguese market: Home, PDP, login and account, plus the ViveStars loyalty program.</span>
+                </p>
+              </div>
+              <span class="case__meta">E-commerce · Web<br>2025</span>
+            </div>
+          </article>
+
+          <!-- PROJETO 02 — Pitanga (fintech wearable) -->
+          <article class="case reveal">
+            <a class="case__cover" href="pitanga.html" aria-label="Pitanga">
+              <div class="stage">
+                <div class="mock mock--phone" style="--x:-16%;--y:2%;--r:-5deg;--hx:-24%;--hr:-7deg;z-index:1">
+                  <div class="mock__scr"><div class="ph g-pitanga"></div></div>
+                </div>
+                <div class="mock mock--watch" style="--x:28%;--y:16%;--r:7deg;--hx:38%;--hr:11deg;z-index:2">
+                  <div class="mock__scr"><div class="ph g-pitanga"></div></div>
+                </div>
+              </div>
+            </a>
+            <div class="case__info">
+              <div>
+                <span class="case__no">02</span>
+                <h3 class="case__title">Pitanga <span class="case__arrow">↗</span></h3>
+                <p class="case__desc">
+                  <span class="pt">App de banco para wearables: pagamento por QR no smartwatch, gestão de cartões, análise de gastos e dashboard para Vision Pro.</span>
+                  <span class="en">Banking app for wearables: smartwatch QR payments, card management, spending analytics and a Vision Pro dashboard.</span>
+                </p>
+              </div>
+              <span class="case__meta">Fintech · Wearable<br>2025</span>
+            </div>
+          </article>
+
+          <!-- PROJETO 03 — Rota Financeira (fintech mobile) -->
+          <article class="case reveal">
+            <a class="case__cover" href="rota.html" aria-label="Rota Financeira">
+              <div class="stage">
+                <div class="mock mock--phone" style="--x:-14%;--y:0;--r:-8deg;--hx:-24%;--hr:-12deg;z-index:1">
+                  <div class="mock__scr"><div class="ph g-rota"></div></div>
+                </div>
+                <div class="mock mock--phone" style="--x:14%;--y:8%;--r:8deg;--hx:24%;--hr:12deg;z-index:2">
+                  <div class="mock__scr"><div class="ph g-rota"></div></div>
+                </div>
+              </div>
+            </a>
+            <div class="case__info">
+              <div>
+                <span class="case__no">03</span>
+                <h3 class="case__title">Rota Financeira <span class="case__arrow">↗</span></h3>
+                <p class="case__desc">
+                  <span class="pt">Gestão de despesas e manutenção para motoristas de aplicativo: dashboards financeiros e controle de custos.</span>
+                  <span class="en">Expense and maintenance management for ride-hailing drivers: financial dashboards and cost tracking.</span>
+                </p>
+              </div>
+              <span class="case__meta">Fintech · Mobile<br>2024</span>
+            </div>
+          </article>
+
+          <!-- PROJETO 04 — Oura Ring (pesquisa exploratória, sem telas) -->
+          <article class="case reveal">
+            <a class="case__cover" href="oura-ring.html" aria-label="Oura Ring">
+              <span class="cover-badge"><span class="pt">Estudo exploratório</span><span class="en">Exploratory study</span></span>
+              <div class="stage stage--research">
+                <div class="ring"></div>
+                <div class="tags">
+                  <span style="top:15%;left:12%"><span class="pt">Desk research</span><span class="en">Desk research</span></span>
+                  <span style="top:21%;left:58%">Benchmark</span>
+                  <span style="top:70%;left:15%"><span class="pt">Mercado</span><span class="en">Market</span></span>
+                  <span style="top:74%;left:55%">Personas</span>
+                </div>
+              </div>
+            </a>
+            <div class="case__info">
+              <div>
+                <span class="case__no">04</span>
+                <h3 class="case__title">Oura Ring <span class="case__arrow">↗</span></h3>
+                <p class="case__desc">
+                  <span class="pt">Projeto exploratório: pesquisa de mercado e desk research sobre wearables de saúde (anel inteligente). Foco em entender público, concorrência e oportunidades — sem telas finais.</span>
+                  <span class="en">Exploratory project: market research and desk research on health wearables (smart ring). Focused on audience, competition and opportunities — no final screens.</span>
+                </p>
+              </div>
+              <span class="case__meta">Healthtech<br><span class="pt">Pesquisa</span><span class="en">Research</span> · 2024</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="section about" id="about">
+      <div class="wrap about__grid">
+        <!-- FOTO: salve a foto do quadro como  gabrielle-quadro.jpg  nesta pasta -->
+        <div class="about__portrait reveal">
+          <img src="assets/img/gabrielle-quadro.jpg" alt="Gabrielle desenhando um fluxo no quadro de vidro" loading="lazy" />
+        </div>
+        <div data-stagger>
+          <span class="mono reveal"><span class="pt">Sobre</span><span class="en">About</span></span>
+          <h2 class="reveal" style="margin-top:16px">
+            <span class="pt">Design com olhar de quem também constrói o sistema por trás.</span>
+            <span class="en">Design from someone who also builds the system behind it.</span>
+          </h2>
+          <p class="reveal">
+            <span class="pt">Sou <strong>Gabrielle</strong>, designer de UX/UI formada em Análise e Desenvolvimento de Sistemas pela FATEC, com foco em produtos digitais. No time da <strong>MoveEdu</strong> trabalho com CRM, automação e dados; como freelancer, atuo em UX/UI para fintech, saúde e e-commerce.</span>
+            <span class="en">I'm <strong>Gabrielle</strong>, a UX/UI designer with a degree in Systems Analysis & Development from FATEC, focused on digital products. At <strong>MoveEdu</strong> I work with CRM, automation and data; as a freelancer, I design UX/UI for fintech, health and e-commerce.</span>
+          </p>
+          <p class="reveal">
+            <span class="pt">Uno rigor de sistema com sensibilidade de design — o que aparece na tela é só a ponta de um fluxo bem pensado.</span>
+            <span class="en">I pair system rigor with design sensibility — what shows on screen is just the tip of a well-considered flow.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="section section--alt cta">
+      <div class="wrap">
+        <h2 class="reveal">
+          <span class="pt">Vamos construir algo <em>bom</em> juntos?</span>
+          <span class="en">Let's build something <em>good</em> together?</span>
+        </h2>
+        <div class="cta__links" data-stagger>
+          <!-- EDITAR: seu e-mail e redes -->
+          <a class="cta__mail reveal" data-magnetic href="mailto:comercialgabriellevitoria@gmail.com">comercialgabriellevitoria@gmail.com</a>
+          <a class="cta__social reveal" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="cta__social reveal" href="#" target="_blank" rel="noopener">Behance ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__word" aria-hidden="true">GABRIELLE</div>
+      <div class="foot__bar">
+        <span class="mono">© <span id="year"></span> Gabrielle · <span class="pt">Feito com HTML puro</span><span class="en">Built with plain HTML</span></span>
+        <a href="#top"><span class="pt">Voltar ao topo ↑</span><span class="en">Back to top ↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

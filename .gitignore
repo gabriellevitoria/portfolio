@@ -1,0 +1,23 @@
+# Arquivos de SO
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / dependências (não há, mas para futuro)
+node_modules/
+dist/
+.env
+.env.local
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.log
