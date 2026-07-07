@@ -1,0 +1,337 @@
+<!doctype html>
+<!--
+  ============================================================
+  CASE — Pitanga  |  Portfólio Gabrielle (UX/UI Designer)
+  Segue o molde do vivelon.html. CSS/JS compartilhados em
+  assets/css/styles.css e assets/js/main.js.
+  ------------------------------------------------------------
+  • Bilíngue: cada texto tem <span class="pt">…</span> e
+    <span class="en">…</span> lado a lado. Edite os dois.
+  • TELAS: os exports do Figma estão em assets/img/telas/
+    (pitanga-*.png).
+  • Procure por  EDITAR:  para os pontos que dependem de você.
+  ============================================================
+-->
+<html lang="pt" data-lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pitanga — Case · Gabrielle</title>
+  <meta name="description" content="Case de UX/UI: Pitanga, app de finanças com integração de cartões e contas, pagamento por QR Code no smartwatch e painel de análises no Apple Vision Pro." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <div class="cur cur--ring" aria-hidden="true"></div>
+  <div class="cur cur--dot" aria-hidden="true"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="nav__back" href="index.html#work">
+        <span class="ar">←</span>
+        <span class="pt">Voltar aos projetos</span><span class="en">Back to work</span>
+      </a>
+      <div class="nav__right">
+        <a class="brand" href="index.html">Gabrielle<b>.</b></a>
+        <span class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set="pt" aria-pressed="true">PT</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="chero wrap">
+      <div class="chero__meta reveal">
+        <span class="pill pill--hot">Fintech</span>
+        <span class="pill">Mobile</span>
+        <span class="pill">Smartwatch</span>
+        <span class="pill">Vision Pro</span>
+        <span class="pill">2025</span>
+        <span class="pill"><span class="pt">Trabalho de graduação</span><span class="en">Graduation project</span></span>
+      </div>
+      <h1 class="reveal">Pitanga<em>.</em></h1>
+      <p class="chero__lead reveal">
+        <span class="pt">Um app de finanças que reúne cartões, contas e metas num só lugar, do smartphone ao smartwatch e ao Apple Vision Pro.</span>
+        <span class="en">A finance app that brings cards, accounts and goals together in one place, from smartphone to smartwatch and Apple Vision Pro.</span>
+      </p>
+
+      <!-- IMAGEM PRINCIPAL: painel de análises no Vision Pro -->
+      <div class="lead-shot reveal">
+        <div class="browser">
+          <div class="browser__bar">
+            <i></i><i></i><i></i>
+            <span class="browser__url">Pitanga · Apple Vision Pro</span>
+          </div>
+          <div class="browser__scr">
+            <img src="assets/img/telas/pitanga-visionpro.png" alt="Painel de análises da Pitanga no Apple Vision Pro">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SPEC ======================= -->
+    <section class="spec">
+      <div class="wrap">
+        <dl class="spec__grid">
+          <div class="spec__cell">
+            <dt><span class="pt">Meu papel</span><span class="en">My role</span></dt>
+            <dd>UX/UI Designer</dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Período</span><span class="en">Timeline</span></dt>
+            <dd><span class="pt">2025 · concluído</span><span class="en">2025 · completed</span></dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Plataforma</span><span class="en">Platform</span></dt>
+            <dd>Mobile · Watch · Vision Pro</dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Ferramentas</span><span class="en">Tools</span></dt>
+            <dd>Figma</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======================= PROBLEMA ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">01 · <span class="pt">O desafio</span><span class="en">The challenge</span></span>
+        <h2><span class="pt">Finanças espalhadas em muitos lugares, nenhum deles no pulso.</span><span class="en">Finances scattered across many places, none of them on the wrist.</span></h2>
+        <p>
+          <span class="pt">Gerir as finanças pessoais com eficiência ainda é um desafio para muita gente, principalmente quando é preciso reunir informações de vários bancos e cartões num lugar só. E a falta de soluções acessíveis para dispositivos vestíveis torna difícil acompanhar os gastos do dia a dia com rapidez e conveniência.</span>
+          <span class="en">Managing personal finances efficiently is still a challenge for many people, especially when information from several banks and cards needs to live in one place. And the lack of accessible solutions for wearable devices makes it hard to track daily spending quickly and conveniently.</span>
+        </p>
+        <p>
+          <span class="pt">O objetivo: <strong>uma experiência simples e segura</strong> para acompanhar gastos, definir metas financeiras e pagar por QR Code, com o mesmo cuidado no telefone, no relógio e nos óculos de realidade aumentada.</span>
+          <span class="en">The goal: <strong>a simple, secure experience</strong> to track spending, set financial goals and pay via QR Code, with the same care on the phone, the watch and augmented reality glasses.</span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= MEU PAPEL ======================= -->
+    <section class="section section--alt">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">02 · <span class="pt">Meu papel</span><span class="en">My role</span></span>
+        <h2><span class="pt">UX/UI de ponta a ponta, em três dispositivos.</span><span class="en">End-to-end UX/UI, across three devices.</span></h2>
+        <p>
+          <span class="pt">Projeto desenvolvido como trabalho de graduação: cuidei de tudo, da pesquisa e análise de concorrentes aos fluxos, wireframes e telas em alta fidelidade. Desenhei a <strong>gestão de contas e cartões, as análises de gastos, as metas</strong> e o <strong>pagamento por QR Code no smartwatch</strong>.</span>
+          <span class="en">Developed as my graduation project: I owned everything, from research and competitor analysis to flows, wireframes and high-fidelity screens. I designed <strong>account and card management, spending analytics, goals</strong> and <strong>QR Code payments on the smartwatch</strong>.</span>
+        </p>
+        <p>
+          <span class="pt">A parte mais desafiadora foi levar a experiência para o <strong>Apple Vision Pro</strong>: um painel espacial de análises com a Tanga, assistente de IA que cria novos gráficos a pedido.</span>
+          <span class="en">The most challenging part was bringing the experience to the <strong>Apple Vision Pro</strong>: a spatial analytics dashboard with Tanga, an AI assistant that creates new charts on request.</span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= PROCESSO ======================= -->
+    <section class="section">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">03 · <span class="pt">Processo</span><span class="en">Process</span></span>
+          <h2><span class="pt">Da pesquisa ao protótipo em três telas.</span><span class="en">From research to a three-screen prototype.</span></h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="step__no">01</div>
+            <h3><span class="pt">Descoberta</span><span class="en">Discovery</span></h3>
+            <p><span class="pt">Pesquisa sobre gestão financeira pessoal e análise de concorrentes: o que os apps de banco resolvem bem e onde os wearables ficam de fora.</span><span class="en">Research on personal finance management and competitor analysis: what banking apps solve well and where wearables are left out.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">02</div>
+            <h3><span class="pt">Arquitetura & fluxos</span><span class="en">Architecture & flows</span></h3>
+            <p><span class="pt">Mapear contas, cartões, metas, análises e o fluxo de pagamento por QR Code, decidindo o que faz sentido em cada dispositivo.</span><span class="en">Mapping accounts, cards, goals, analytics and the QR Code payment flow, deciding what belongs on each device.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">03</div>
+            <h3>Wireframes</h3>
+            <p><span class="pt">Estruturar as telas em baixa fidelidade, priorizando leitura rápida de saldos e gráficos antes de decidir o visual.</span><span class="en">Structuring the screens in low fidelity, prioritizing quick reading of balances and charts before deciding the visuals.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">04</div>
+            <h3><span class="pt">UI & protótipos</span><span class="en">UI & prototypes</span></h3>
+            <p><span class="pt">Telas em alta fidelidade e protótipos navegáveis para mobile, smartwatch e Vision Pro, com componentes consistentes entre os três.</span><span class="en">High-fidelity screens and navigable prototypes for mobile, smartwatch and Vision Pro, with components consistent across all three.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TELAS ======================= -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">04 · <span class="pt">Telas</span><span class="en">Screens</span></span>
+          <h2><span class="pt">As telas principais.</span><span class="en">The key screens.</span></h2>
+        </div>
+        <div class="shots reveal">
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#F8F2E9">
+              <img src="assets/img/telas/pitanga-analises-mobile.png" alt="Tela de análises da Pitanga no smartphone">
+            </div>
+            <div class="shot__cap"><b><span class="pt">Análises</span><span class="en">Analytics</span></b><span><span class="pt">Faturas, receita & gastos</span><span class="en">Bills, income & spending</span></span></div>
+          </div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#F8F2E9">
+              <img src="assets/img/telas/pitanga-metas-mobile.png" alt="Tela de metas financeiras da Pitanga">
+            </div>
+            <div class="shot__cap"><b>Metas</b><span><span class="pt">Objetivos financeiros</span><span class="en">Financial goals</span></span></div>
+          </div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#F8F2E9">
+              <img src="assets/img/telas/pitanga-perfil-mobile.png" alt="Tela de perfil da Pitanga">
+            </div>
+            <div class="shot__cap"><b><span class="pt">Perfil</span><span class="en">Profile</span></b><span><span class="pt">Conta & preferências</span><span class="en">Account & preferences</span></span></div>
+          </div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#DCD3C9">
+              <img src="assets/img/telas/pitanga-watch.png" alt="Pitanga no smartwatch com pagamento por QR Code">
+            </div>
+            <div class="shot__cap"><b>SmartWatch</b><span><span class="pt">QR Code no pulso</span><span class="en">QR Code on the wrist</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= DESIGN SYSTEM ======================= -->
+    <section class="section">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">05 · <span class="pt">Design System</span><span class="en">Design System</span></span>
+          <h2><span class="pt">Um sistema que veste três dispositivos.</span><span class="en">One system that fits three devices.</span></h2>
+          <p><span class="pt">Para manter a experiência coerente entre telefone, relógio e Vision Pro, organizei cores, tipografia e componentes num sistema único: o mesmo botão, cartão e gráfico se adaptam a cada tamanho de tela.</span><span class="en">To keep the experience coherent across phone, watch and Vision Pro, I organized colors, typography and components into a single system: the same button, card and chart adapt to each screen size.</span></p>
+        </div>
+
+        <!-- CORES — EDITAR: ajuste os hex pelas cores exatas do Figma -->
+        <div class="ds-block reveal">
+          <p class="ds-sub"><span class="pt">Cores</span><span class="en">Color</span></p>
+          <div class="ds-sw">
+            <div class="sw"><div class="sw__chip" style="background:#EF5236"></div><div class="sw__meta"><b><span class="pt">Primária</span><span class="en">Primary</span></b><span>#EF5236</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#F0873C"></div><div class="sw__meta"><b><span class="pt">Destaque</span><span class="en">Accent</span></b><span>#F0873C</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#B04FC4"></div><div class="sw__meta"><b><span class="pt">Dados</span><span class="en">Data</span></b><span>#B04FC4</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#241D1A"></div><div class="sw__meta"><b><span class="pt">Tinta</span><span class="en">Ink</span></b><span>#241D1A</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#FAF3EA;box-shadow:inset 0 0 0 1px var(--line)"></div><div class="sw__meta"><b><span class="pt">Fundo</span><span class="en">Surface</span></b><span>#FAF3EA</span></div></div>
+          </div>
+        </div>
+
+        <!-- TIPOGRAFIA -->
+        <div class="ds-block reveal">
+          <p class="ds-sub"><span class="pt">Tipografia</span><span class="en">Typography</span></p>
+          <div class="ds-type">
+            <div class="row">
+              <span class="disp">Aa Bb Cc</span>
+              <span class="spec-lbl"><span class="pt">Display · títulos</span><span class="en">Display · headings</span></span>
+            </div>
+            <div class="row">
+              <span class="body-s"><span class="pt">Saldos, extratos e legendas de gráficos: números que precisam ser lidos num relance, em qualquer tamanho de tela.</span><span class="en">Balances, statements and chart labels: numbers that need to be read at a glance, on any screen size.</span></span>
+              <span class="spec-lbl"><span class="pt">Corpo · leitura</span><span class="en">Body · reading</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPONENTES -->
+        <div class="ds-block reveal">
+          <p class="ds-sub"><span class="pt">Componentes</span><span class="en">Components</span></p>
+          <div class="ds-comp">
+            <div class="cmp">
+              <span class="cmp__lbl"><span class="pt">Botão</span><span class="en">Button</span></span>
+              <button class="u-btn" type="button"><span class="pt">Gerar QR Code</span><span class="en">Generate QR Code</span></button>
+              <button class="u-btn u-btn--ghost" type="button"><span class="pt">Ver extrato</span><span class="en">View statement</span></button>
+            </div>
+            <div class="cmp">
+              <span class="cmp__lbl"><span class="pt">Campo</span><span class="en">Input</span></span>
+              <span class="u-input"><span class="pt">Pesquisar</span><span class="en">Search</span></span>
+              <span class="u-input">R$ ••••••••</span>
+            </div>
+            <div class="cmp">
+              <span class="cmp__lbl"><span class="pt">Etiquetas</span><span class="en">Badges</span></span>
+              <span class="u-badge">Pix</span>
+              <span class="u-badge">QR Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= RESULTADO ======================= -->
+    <section class="section section--alt">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">06 · <span class="pt">Resultado</span><span class="en">Results</span></span>
+        <h2><span class="pt">Uma experiência contínua, do bolso ao pulso.</span><span class="en">A continuous experience, from pocket to wrist.</span></h2>
+      </div></div>
+      <div class="wrap">
+        <div class="stats reveal">
+          <div class="stat">
+            <b>3</b>
+            <span><span class="pt">Dispositivos desenhados</span><span class="en">Devices designed</span></span>
+          </div>
+          <div class="stat">
+            <b>4+</b>
+            <span><span class="pt">Fluxos principais</span><span class="en">Core flows</span></span>
+          </div>
+          <div class="stat">
+            <b>Tanga</b>
+            <span><span class="pt">Assistente de IA</span><span class="en">AI assistant</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap"><div class="prose reveal">
+        <p>
+          <span class="pt">O resultado foi uma experiência que acompanha a pessoa em cada contexto: o telefone concentra a gestão completa de contas, cartões e metas; o relógio resolve o pagamento por QR Code no pulso; e o Vision Pro transforma as análises num painel espacial, com a assistente Tanga criando novos gráficos a pedido.</span>
+          <span class="en">The result was an experience that follows the user in every context: the phone holds the full management of accounts, cards and goals; the watch handles QR Code payments on the wrist; and the Vision Pro turns analytics into a spatial dashboard, with the Tanga assistant creating new charts on request.</span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= FERRAMENTAS ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent"><span class="pt">Ferramentas</span><span class="en">Tools</span></span>
+        <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)"><span class="pt">O que usei</span><span class="en">What I used</span></h2>
+        <div class="tools">
+          <span>Figma</span>
+          <span>Design System</span>
+          <span>Auto-layout</span>
+          <span><span class="pt">Protótipo</span><span class="en">Prototype</span></span>
+        </div>
+      </div></div>
+    </section>
+
+    <!-- ======================= PRÓXIMO PROJETO ======================= -->
+    <nav class="nextp">
+      <div class="wrap">
+        <a href="rota.html">
+          <span>
+            <small><span class="pt">Próximo projeto</span><span class="en">Next project</span></small>
+            <b>Rota Financeira</b>
+          </span>
+          <span class="ar">↗</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__word" aria-hidden="true">PITANGA</div>
+      <div class="foot__bar">
+        <span>© <span id="year"></span> Gabrielle · <span class="pt">Feito com HTML puro</span><span class="en">Built with plain HTML</span></span>
+        <a href="index.html"><span class="pt">Ver todos os projetos ↑</span><span class="en">See all work ↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
