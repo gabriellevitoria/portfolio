@@ -92,10 +92,10 @@ body.cur-hot .cur--dot{opacity:0}
 /* ===================== INDEX.HTML ===================== */
 
 /* ---------- Hero ---- */
-.hero{padding:clamp(56px,11vh,120px) 0 clamp(40px,7vh,80px)}
+.hero{padding-block:clamp(56px,11vh,120px) clamp(40px,7vh,80px)}
 .hero__eyebrow{margin-bottom:28px}
 .hero__grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{font-size:clamp(2.3rem,4.8vw,3.6rem);font-weight:600}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.1rem);font-weight:600}
 .hero h1 em{font-style:normal;color:var(--accent)}
 .hero__sub{margin-top:26px;max-width:50ch;color:var(--ink-soft);font-size:1.18rem;font-weight:300}
 .hero__portrait{aspect-ratio:4/5;border:1px solid var(--line);overflow:hidden;position:relative;background:var(--accent-wash)}
@@ -202,7 +202,7 @@ body.cur-hot .cur--dot{opacity:0}
 /* ===================== VIVELON.HTML (CASE) ===================== */
 
 /* ---------- Case hero ---- */
-.chero{padding:clamp(48px,9vh,104px) 0 clamp(30px,5vh,56px)}
+.chero{padding-block:clamp(48px,9vh,104px) clamp(30px,5vh,56px)}
 .chero__meta{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin-bottom:26px}
 .chero__meta .pill{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
   border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--ink-soft)}
@@ -225,7 +225,7 @@ body.cur-hot .cur--dot{opacity:0}
 
 /* ---------- Spec row ---- */
 .spec{border-block:1px solid var(--line);margin-top:clamp(40px,7vh,72px)}
-.spec__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.spec__grid{display:grid;grid-template-columns:repeat(4,minmax(max-content,1fr));gap:1px;background:var(--line)}
 .spec__cell{background:var(--paper);padding:clamp(20px,2.6vw,30px)}
 .spec__cell dt{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
 .spec__cell dd{margin:0;font-family:var(--f-display);font-weight:500;font-size:1.1rem}
