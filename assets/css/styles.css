@@ -152,7 +152,7 @@ body.cur-hot .cur--dot{opacity:0}
 .case__cover:hover .mock{
   transform:translate(-50%,-50%) translate(var(--hx,var(--x,0)),var(--hy,var(--y,0))) rotate(var(--hr,var(--r,0deg)))}
 .mock__scr{width:100%;height:100%;border-radius:14px;overflow:hidden;background:var(--paper)}
-.mock__scr img{width:100%;height:100%;object-fit:cover}
+.mock__scr img{width:100%;height:100%;object-fit:cover;object-position:top}
 .mock--phone{width:32%;aspect-ratio:9/19}
 .mock--phone::before{content:"";position:absolute;top:11px;left:50%;transform:translateX(-50%);width:30%;height:4px;border-radius:3px;background:#000;z-index:2}
 .mock--watch{width:21%;aspect-ratio:1/1.12;border-radius:26px}
@@ -221,7 +221,7 @@ body.cur-hot .cur--dot{opacity:0}
 .browser__url{margin-left:14px;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;color:#8b8993;
   background:#191820;border-radius:6px;padding:5px 12px}
 .browser__scr{aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
-.browser__scr img,.browser__scr .ph{width:100%;height:100%;object-fit:cover}
+.browser__scr img,.browser__scr .ph{width:100%;height:100%;object-fit:cover;object-position:top}
 
 /* ---------- Spec row ---- */
 .spec{border-block:1px solid var(--line);margin-top:clamp(40px,7vh,72px)}
@@ -259,6 +259,9 @@ body.cur-hot .cur--dot{opacity:0}
 .shot__cap b{font-family:var(--f-display);font-weight:500;font-size:1rem}
 .shot__cap span{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
 .shot--tall .shot__scr{aspect-ratio:4/5}
+.shot__scr img{object-position:top}
+.shot--fit .shot__scr{background:#fff}
+.shot--fit .shot__scr img{object-fit:contain;object-position:center;padding:8%}
 
 /* ---------- Design System ---- */
 .ds-sub{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 14px}
