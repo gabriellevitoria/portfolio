@@ -352,10 +352,13 @@ body.cur-hot .cur--dot{opacity:0}
     repeating-linear-gradient(-45deg,transparent 0 11px,color-mix(in srgb,var(--ink) 4%,transparent) 11px 12px),
     linear-gradient(135deg,#f1ddcf,#e7c9b4);
   box-shadow:0 40px 90px -50px rgba(20,10,0,.55)}
-.oura-scene .ring{width:19%;transition:transform .8s var(--ease)}
-.oura-scene:hover .ring{transform:rotate(28deg) scale(1.05)}
+.oura-scene__ring{width:41%;height:auto;filter:drop-shadow(0 20px 32px rgba(20,10,0,.28));transition:transform .8s var(--ease)}
+.oura-scene:hover .oura-scene__ring{transform:translateY(-6px) rotate(8deg) scale(1.04)}
 .oura-scene .tags span{transition:transform .55s var(--ease)}
 .oura-scene:hover .tags span{transform:translateY(-4px)}
+/* mesmo anel na capa da home (card de pesquisa) */
+.stage--research .ring-img{width:52%;height:auto;filter:drop-shadow(0 14px 22px rgba(20,10,0,.28));transition:transform .6s var(--ease)}
+.case__cover:hover .ring-img{transform:rotate(8deg) scale(1.05)}
 /* grade de descobertas: rótulo de categoria no lugar do número */
 .find__cat{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
 
