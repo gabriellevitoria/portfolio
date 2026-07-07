@@ -1,0 +1,381 @@
+<!doctype html>
+<!--
+  ============================================================
+  CASE — Oura Ring  |  Portfólio Gabrielle (UX/UI Designer)
+  Estudo exploratório (Discovery / Desk Research). Sem telas
+  finais: a página é orientada a pesquisa. CSS/JS em
+  assets/css/styles.css e assets/js/main.js.
+  ------------------------------------------------------------
+  • Bilíngue: cada texto tem <span class="pt">…</span> e
+    <span class="en">…</span> lado a lado. Edite os dois.
+  • Conteúdo baseado no board de pesquisa (OuraRing.pdf).
+  ============================================================
+-->
+<html lang="pt" data-lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oura Ring — Case · Gabrielle</title>
+  <meta name="description" content="Estudo exploratório de UX Research: como adaptar anéis inteligentes de saúde ao contexto brasileiro. Desk research, benchmark de 8 dispositivos e análise heurística." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <div class="cur cur--ring" aria-hidden="true"></div>
+  <div class="cur cur--dot" aria-hidden="true"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="nav__back" href="index.html#work">
+        <span class="ar">←</span>
+        <span class="pt">Voltar aos projetos</span><span class="en">Back to work</span>
+      </a>
+      <div class="nav__right">
+        <a class="brand" href="index.html">Gabrielle<b>.</b></a>
+        <span class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set="pt" aria-pressed="true">PT</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="chero wrap">
+      <div class="chero__meta reveal">
+        <span class="pill pill--hot">Healthtech</span>
+        <span class="pill">Wearable</span>
+        <span class="pill"><span class="pt">Pesquisa</span><span class="en">Research</span></span>
+        <span class="pill">Discovery</span>
+        <span class="pill">2024</span>
+        <span class="pill"><span class="pt">Mercado brasileiro</span><span class="en">Brazilian market</span></span>
+      </div>
+      <h1 class="reveal">Oura Ring<em>.</em></h1>
+      <p class="chero__lead reveal">
+        <span class="pt">Um estudo exploratório sobre como os anéis inteligentes de saúde poderiam ser adaptados ao contexto brasileiro. Sem telas finais, o foco foi entender público, concorrência e oportunidades.</span>
+        <span class="en">An exploratory study on how smart health rings could be adapted to the Brazilian context. No final screens; the focus was understanding audience, competition and opportunities.</span>
+      </p>
+
+      <!-- CENA DE PESQUISA: anel + tags (sem telas finais) -->
+      <div class="lead-shot reveal">
+        <div class="oura-scene">
+          <div class="ring"></div>
+          <div class="tags">
+            <span style="top:14%;left:9%"><span class="pt">Desk research</span><span class="en">Desk research</span></span>
+            <span style="top:17%;left:60%">Benchmark · 8 apps</span>
+            <span style="top:46%;left:5%">Personas</span>
+            <span style="top:73%;left:12%"><span class="pt">Análise heurística</span><span class="en">Heuristic review</span></span>
+            <span style="top:70%;left:62%"><span class="pt">Contexto BR</span><span class="en">BR context</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SPEC ======================= -->
+    <section class="spec">
+      <div class="wrap">
+        <dl class="spec__grid">
+          <div class="spec__cell">
+            <dt><span class="pt">Meu papel</span><span class="en">My role</span></dt>
+            <dd>UX Research</dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Período</span><span class="en">Timeline</span></dt>
+            <dd>2024</dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Tipo</span><span class="en">Type</span></dt>
+            <dd><span class="pt">Discovery · Desk research</span><span class="en">Discovery · Desk research</span></dd>
+          </div>
+          <div class="spec__cell">
+            <dt><span class="pt">Foco</span><span class="en">Focus</span></dt>
+            <dd><span class="pt">Contexto brasileiro</span><span class="en">Brazilian context</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======================= DESAFIO ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">01 · <span class="pt">O desafio</span><span class="en">The challenge</span></span>
+        <h2><span class="pt">Tecnologia global, corpo e país específicos.</span><span class="en">Global tech, specific body and country.</span></h2>
+        <p>
+          <span class="pt">Os anéis inteligentes detectam sinais fisiológicos sutis, como leves alterações de temperatura ou padrões de sono agitado, que podem indicar o início de uma doença antes mesmo do usuário perceber. O problema é que esses dispositivos são projetados com uma visão global que nem sempre captura a particularidade do contexto brasileiro.</span>
+          <span class="en">Smart rings detect subtle physiological signals, like slight temperature changes or restless sleep patterns, that can flag the onset of a condition before the user even notices. The catch is that these devices are designed with a global lens that does not always capture the particularities of the Brazilian context.</span>
+        </p>
+        <p>
+          <span class="pt">Tomei o app do <strong>Ultrahuman Ring AIR</strong> como base e investiguei uma pergunta central: <strong>como essa tecnologia poderia servir de verdade à realidade de saúde do Brasil?</strong></span>
+          <span class="en">I took the <strong>Ultrahuman Ring AIR</strong> app as a starting point and investigated one central question: <strong>how could this technology genuinely serve Brazil's health reality?</strong></span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= OBJETIVO & MÉTODO ======================= -->
+    <section class="section section--alt">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">02 · <span class="pt">Objetivo & método</span><span class="en">Objective & method</span></span>
+        <h2><span class="pt">Pesquisa de mesa, guiada por perguntas.</span><span class="en">Desk research, driven by questions.</span></h2>
+        <p>
+          <span class="pt">O objetivo foi entender como a tecnologia dos anéis de monitoramento pode ser adaptada ao Brasil. Para isso, reuni fontes sobre wearables e saúde, dados de epidemiologia nacional, um benchmark de concorrentes e uma análise heurística do app da Ultrahuman.</span>
+          <span class="en">The goal was to understand how ring monitoring technology can be adapted to Brazil. To do that, I gathered sources on wearables and health, national epidemiology data, a competitor benchmark and a heuristic review of the Ultrahuman app.</span>
+        </p>
+        <p>
+          <span class="pt">Três perguntas guiaram a investigação: <strong>quais doenças brasileiras poderiam ser monitoradas pelo anel? Como os médicos gostariam de receber esses dados? E o que os concorrentes já oferecem?</strong></span>
+          <span class="en">Three questions guided the work: <strong>which Brazilian diseases could the ring monitor? How would doctors like to receive that data? And what do competitors already offer?</strong></span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= PROCESSO ======================= -->
+    <section class="section">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">03 · <span class="pt">Processo</span><span class="en">Process</span></span>
+          <h2><span class="pt">Do enquadramento à síntese.</span><span class="en">From framing to synthesis.</span></h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="step__no">01</div>
+            <h3><span class="pt">Enquadramento</span><span class="en">Framing</span></h3>
+            <p><span class="pt">Definir o problema e as perguntas de pesquisa a partir do app da Ultrahuman e do recorte brasileiro.</span><span class="en">Defining the problem and research questions from the Ultrahuman app and the Brazilian angle.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">02</div>
+            <h3>Desk research</h3>
+            <p><span class="pt">Levantar fontes sobre wearables, telemedicina e as doenças mais prevalentes no país.</span><span class="en">Gathering sources on wearables, telemedicine and the most prevalent diseases in the country.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">03</div>
+            <h3>Benchmark</h3>
+            <p><span class="pt">Comparar oito dispositivos por sono, coração, temperatura, estresse, ciclo, atividade, bateria e ecossistema.</span><span class="en">Comparing eight devices across sleep, heart, temperature, stress, cycle, activity, battery and ecosystem.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">04</div>
+            <h3><span class="pt">Síntese</span><span class="en">Synthesis</span></h3>
+            <p><span class="pt">Transformar os achados em insights e direções de design para a fase seguinte.</span><span class="en">Turning findings into insights and design directions for the next phase.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= DESCOBERTAS ======================= -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">04 · <span class="pt">Descobertas</span><span class="en">Key findings</span></span>
+          <h2><span class="pt">O que a pesquisa revelou.</span><span class="en">What the research surfaced.</span></h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="find__cat"><span class="pt">Doenças</span><span class="en">Diseases</span></div>
+            <h3><span class="pt">Rastreáveis no Brasil</span><span class="en">Trackable in Brazil</span></h3>
+            <p><span class="pt">Diabetes tipo 2 (cerca de 20 milhões de pessoas), apneia do sono (32% da população), asma e DPOC, e doenças cardiovasculares, a principal causa de morte no país.</span><span class="en">Type 2 diabetes (around 20 million people), sleep apnea (32% of the population), asthma and COPD, and cardiovascular disease, the leading cause of death in the country.</span></p>
+          </div>
+          <div class="step">
+            <div class="find__cat"><span class="pt">Sono</span><span class="en">Sleep</span></div>
+            <h3><span class="pt">O viés do sono noturno</span><span class="en">The night-sleep bias</span></h3>
+            <p><span class="pt">Os anéis assumem que o sono acontece entre 21h e 9h. Quem trabalha em turnos, na saúde ou no transporte, recebe alertas inadequados e análises erradas.</span><span class="en">Rings assume sleep happens between 9pm and 9am. Shift workers, in healthcare or transport, get inappropriate alerts and wrong analyses.</span></p>
+          </div>
+          <div class="step">
+            <div class="find__cat"><span class="pt">Médicos</span><span class="en">Doctors</span></div>
+            <h3><span class="pt">Dados que o médico usa</span><span class="en">Data doctors act on</span></h3>
+            <p><span class="pt">Preferem informação visual e resumida, alertas e integração com o prontuário. Ainda assim, muitos confiam mais nos próprios equipamentos do que nos dados do wearable.</span><span class="en">They prefer visual, summarized information, alerts and integration with medical records. Even so, many still trust their own equipment more than wearable data.</span></p>
+          </div>
+          <div class="step">
+            <div class="find__cat"><span class="pt">Cuidadores</span><span class="en">Caregivers</span></div>
+            <h3><span class="pt">Quem cuida junto</span><span class="en">Those who care alongside</span></h3>
+            <p><span class="pt">Familiares e profissionais precisam de acesso com permissão, temporária ou contínua, e de um modo de resumo diário com os principais alertas.</span><span class="en">Family and professionals need permissioned access, temporary or ongoing, and a daily summary mode with the main alerts.</span></p>
+          </div>
+          <div class="step">
+            <div class="find__cat"><span class="pt">Contexto</span><span class="en">Context</span></div>
+            <h3><span class="pt">Alertas locais</span><span class="en">Local alerts</span></h3>
+            <p><span class="pt">Ondas de calor e poluição do ar agravam doenças cardiovasculares e respiratórias nos grandes centros, um espaço para prevenção adaptativa.</span><span class="en">Heat waves and air pollution worsen cardiovascular and respiratory conditions in big cities, an opening for adaptive prevention.</span></p>
+          </div>
+          <div class="step">
+            <div class="find__cat">Onboarding</div>
+            <h3><span class="pt">Começar simples</span><span class="en">Start simple</span></h3>
+            <p><span class="pt">Poucas perguntas no início, como focar em sono, batimentos ou passos, com preferências editáveis depois e widgets configuráveis na tela inicial.</span><span class="en">A few questions up front, like focusing on sleep, heart rate or steps, with preferences editable later and configurable widgets on the home screen.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= BENCHMARK ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent">05 · <span class="pt">Benchmark</span><span class="en">Benchmark</span></span>
+        <h2><span class="pt">Oito dispositivos, lado a lado.</span><span class="en">Eight devices, side by side.</span></h2>
+        <p>
+          <span class="pt">Comparei anéis, relógios e pulseiras inteligentes em nove critérios: plano pago, monitoramento do sono, frequência cardíaca, temperatura, nível de estresse, ciclo menstrual, atividade física, duração da bateria e ecossistema.</span>
+          <span class="en">I compared smart rings, watches and bands across nine criteria: paid plan, sleep monitoring, heart rate, temperature, stress level, menstrual cycle, physical activity, battery life and ecosystem.</span>
+        </p>
+      </div></div>
+      <div class="wrap">
+        <div class="stats reveal">
+          <div class="stat">
+            <b>8</b>
+            <span><span class="pt">Dispositivos comparados</span><span class="en">Devices compared</span></span>
+          </div>
+          <div class="stat">
+            <b>9</b>
+            <span><span class="pt">Critérios de análise</span><span class="en">Analysis criteria</span></span>
+          </div>
+          <div class="stat">
+            <b>1</b>
+            <span><span class="pt">Análise heurística</span><span class="en">Heuristic review</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap"><div class="prose reveal">
+        <div class="tools">
+          <span>UltraHuman Ring AIR</span>
+          <span>Oura Ring G4</span>
+          <span>Galaxy Ring</span>
+          <span>Movano Evie</span>
+          <span>Whoop 4.0</span>
+          <span>Apple Watch S8</span>
+          <span>Garmin</span>
+          <span>Fitbit Versa 4</span>
+        </div>
+      </div></div>
+    </section>
+
+    <!-- ======================= OPORTUNIDADES ======================= -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="prose reveal">
+          <span class="mono lbl accent">06 · <span class="pt">Oportunidades</span><span class="en">Opportunities</span></span>
+          <h2><span class="pt">Direções de design para a próxima fase.</span><span class="en">Design directions for the next phase.</span></h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="step__no">01</div>
+            <h3><span class="pt">Dashboard de insights</span><span class="en">Insight dashboard</span></h3>
+            <p><span class="pt">Recomendações práticas no lugar de só números, com comparações no tempo e linguagem contextual, como "seu sono foi restaurador para a sua faixa etária".</span><span class="en">Practical recommendations instead of raw numbers, with comparisons over time and contextual language, like "your sleep was restorative for your age group".</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">02</div>
+            <h3><span class="pt">Ciclos personalizados</span><span class="en">Personalized cycles</span></h3>
+            <p><span class="pt">Reconhecer o sono invertido e adaptar as recomendações para quem trabalha em turnos, em vez de assumir uma noite padrão.</span><span class="en">Recognizing inverted sleep and adapting recommendations for shift workers, rather than assuming a standard night.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">03</div>
+            <h3><span class="pt">Painel para médicos</span><span class="en">Doctor panel</span></h3>
+            <p><span class="pt">Acesso validado por CRM ou CNS, filtros por paciente e período, exportação em PDF e integração com prontuários eletrônicos.</span><span class="en">Access validated by medical registration, filters by patient and period, PDF export and integration with electronic records.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">04</div>
+            <h3><span class="pt">Modo cuidador</span><span class="en">Caregiver mode</span></h3>
+            <p><span class="pt">Permissão temporária ou contínua e um resumo diário com os alertas mais importantes, pensado para famílias e profissionais.</span><span class="en">Temporary or ongoing permission and a daily summary with the most important alerts, designed for families and professionals.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">05</div>
+            <h3><span class="pt">Prevenção adaptativa</span><span class="en">Adaptive prevention</span></h3>
+            <p><span class="pt">Alertas ligados a condições locais, como ondas de calor e qualidade do ar, que impactam quem tem doenças cardíacas e respiratórias.</span><span class="en">Alerts tied to local conditions, like heat waves and air quality, that affect people with heart and respiratory conditions.</span></p>
+          </div>
+          <div class="step">
+            <div class="step__no">06</div>
+            <h3><span class="pt">Onboarding personalizado</span><span class="en">Personalized onboarding</span></h3>
+            <p><span class="pt">Perguntas simples no início para definir o foco e a possibilidade de reeditar tudo depois, com uma home montada pelo usuário.</span><span class="en">Simple questions up front to set the focus, with everything editable later and a home the user assembles.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= OBJETIVOS DOS USUÁRIOS ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent"><span class="pt">Objetivos dos usuários</span><span class="en">User goals</span></span>
+        <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)"><span class="pt">Por que as pessoas usam um anel</span><span class="en">Why people wear a ring</span></h2>
+        <div class="tools">
+          <span><span class="pt">Monitorar o sono</span><span class="en">Track sleep</span></span>
+          <span><span class="pt">Saúde cardíaca & estresse</span><span class="en">Heart health & stress</span></span>
+          <span><span class="pt">Recomendações de bem-estar</span><span class="en">Wellness recommendations</span></span>
+          <span><span class="pt">Detectar mudanças</span><span class="en">Detect changes</span></span>
+          <span><span class="pt">Desempenho esportivo</span><span class="en">Sports performance</span></span>
+        </div>
+      </div></div>
+    </section>
+
+    <!-- ======================= RESULTADO ======================= -->
+    <section class="section section--alt">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent"><span class="pt">Resultado</span><span class="en">Outcome</span></span>
+        <h2><span class="pt">Uma base sólida para desenhar.</span><span class="en">A solid base to design from.</span></h2>
+      </div></div>
+      <div class="wrap">
+        <div class="stats reveal">
+          <div class="stat">
+            <b>8</b>
+            <span><span class="pt">Dispositivos no benchmark</span><span class="en">Devices benchmarked</span></span>
+          </div>
+          <div class="stat">
+            <b>5</b>
+            <span><span class="pt">Grupos de doenças mapeados</span><span class="en">Disease groups mapped</span></span>
+          </div>
+          <div class="stat">
+            <b>6</b>
+            <span><span class="pt">Oportunidades de design</span><span class="en">Design opportunities</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap"><div class="prose reveal">
+        <p>
+          <span class="pt">A pesquisa entregou um retrato claro do problema e um conjunto de direções concretas: um anel inteligente pensado para o Brasil precisa ir além dos números, respeitar quem dorme fora do horário padrão, conversar com médicos e cuidadores e reagir às condições locais. É a base para a fase de definição e design.</span>
+          <span class="en">The research delivered a clear picture of the problem and a set of concrete directions: a smart ring made for Brazil needs to go beyond numbers, respect people who sleep off-schedule, talk to doctors and caregivers and react to local conditions. That is the base for the define and design phase.</span>
+        </p>
+      </div></div>
+    </section>
+
+    <!-- ======================= FERRAMENTAS ======================= -->
+    <section class="section">
+      <div class="wrap"><div class="prose reveal">
+        <span class="mono lbl accent"><span class="pt">Ferramentas</span><span class="en">Tools</span></span>
+        <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)"><span class="pt">O que usei</span><span class="en">What I used</span></h2>
+        <div class="tools">
+          <span>Figma</span>
+          <span>FigJam</span>
+          <span>Desk research</span>
+          <span>Benchmark</span>
+          <span><span class="pt">Análise heurística</span><span class="en">Heuristic review</span></span>
+        </div>
+      </div></div>
+    </section>
+
+    <!-- ======================= PRÓXIMO PROJETO ======================= -->
+    <nav class="nextp">
+      <div class="wrap">
+        <a href="vivelon.html">
+          <span>
+            <small><span class="pt">Próximo projeto</span><span class="en">Next project</span></small>
+            <b>Vivelon</b>
+          </span>
+          <span class="ar">↗</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__word" aria-hidden="true">OURA</div>
+      <div class="foot__bar">
+        <span>© <span id="year"></span> Gabrielle · <span class="pt">Feito com HTML puro</span><span class="en">Built with plain HTML</span></span>
+        <a href="index.html"><span class="pt">Ver todos os projetos ↑</span><span class="en">See all work ↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
