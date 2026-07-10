@@ -42,8 +42,11 @@
       <nav class="nav__links" aria-label="Principal">
         <a href="#work"><span class="pt">Projetos</span><span class="en">Work</span></a>
         <a href="#about"><span class="pt">Sobre</span><span class="en">About</span></a>
-        <!-- EDITAR: link do seu CV em PDF -->
-        <a class="nav__cv" data-magnetic href="#" target="_blank" rel="noopener">CV</a>
+        <!-- CV bilíngue: o href troca conforme o idioma ativo (ver main.js). -->
+        <a class="nav__cv"
+           data-cv-pt="CV/Gabrielle-Vitoria-CV-PT.pdf"
+           data-cv-en="CV/Gabrielle-Vitoria-CV-EN.pdf"
+           href="CV/Gabrielle-Vitoria-CV-PT.pdf" target="_blank" rel="noopener">CV</a>
         <span class="lang" role="group" aria-label="Idioma / Language">
           <button type="button" data-set="pt" aria-pressed="true">PT</button>
           <button type="button" data-set="en" aria-pressed="false">EN</button>
@@ -168,10 +171,10 @@
             <a class="case__cover" href="vivelon.html" aria-label="Vivelon">
               <div class="stage">
                 <div class="mock mock--web" style="--x:-8%;--y:-6%;--r:-3deg;--hx:-13%;--hr:-4deg;z-index:1">
-                  <div class="mock__scr"><img src="assets/img/telas/vivelon-home-desktop.jpg" alt=""></div>
+                  <div class="mock__scr"><img src="assets/img/telas/vivelon-home-desktop.png" alt=""></div>
                 </div>
                 <div class="mock mock--phone" style="--x:28%;--y:12%;--r:6deg;--hx:36%;--hr:9deg;z-index:2">
-                  <div class="mock__scr"><div class="ph g-vivelon"></div></div>
+                  <div class="mock__scr"><img src="assets/img/telas/vivelon-home-mobile.png" alt=""></div>
                 </div>
               </div>
             </a>
@@ -215,33 +218,7 @@
             </div>
           </article>
 
-          <!-- PROJETO 03 — Rota Financeira (fintech mobile · em construção, sem página ainda) -->
-          <article class="case reveal">
-            <div class="case__cover" aria-label="Rota Financeira">
-              <span class="cover-badge"><span class="pt">Em construção</span><span class="en">In progress</span></span>
-              <div class="stage">
-                <div class="mock mock--phone" style="--x:-14%;--y:0;--r:-8deg;--hx:-24%;--hr:-12deg;z-index:1">
-                  <div class="mock__scr"><div class="ph g-rota"></div></div>
-                </div>
-                <div class="mock mock--phone" style="--x:14%;--y:8%;--r:8deg;--hx:24%;--hr:12deg;z-index:2">
-                  <div class="mock__scr"><div class="ph g-rota"></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="case__info">
-              <div>
-                <span class="case__no">03</span>
-                <h3 class="case__title">Rota Financeira</h3>
-                <p class="case__desc">
-                  <span class="pt">Gestão de despesas e manutenção para motoristas de aplicativo: dashboards financeiros e controle de custos.</span>
-                  <span class="en">Expense and maintenance management for ride-hailing drivers: financial dashboards and cost tracking.</span>
-                </p>
-              </div>
-              <span class="case__meta">Fintech · Mobile · 2024</span>
-            </div>
-          </article>
-
-          <!-- PROJETO 04 — Oura Ring (pesquisa exploratória, sem telas) -->
+          <!-- PROJETO 03 — Oura Ring (pesquisa exploratória, sem telas) -->
           <article class="case reveal">
             <a class="case__cover" href="oura-ring.html" aria-label="Oura Ring">
               <span class="cover-badge"><span class="pt">Estudo exploratório</span><span class="en">Exploratory study</span></span>
@@ -257,7 +234,7 @@
             </a>
             <div class="case__info">
               <div>
-                <span class="case__no">04</span>
+                <span class="case__no">03</span>
                 <h3 class="case__title">Oura Ring <span class="case__arrow">↗</span></h3>
                 <p class="case__desc">
                   <span class="pt">Projeto exploratório: pesquisa de mercado e desk research sobre wearables de saúde (anel inteligente). Foco em entender público, concorrência e oportunidades — sem telas finais.</span>
@@ -265,6 +242,32 @@
                 </p>
               </div>
               <span class="case__meta">Healthtech · <span class="pt">Pesquisa</span><span class="en">Research</span> · 2024</span>
+            </div>
+          </article>
+
+          <!-- PROJETO 04 — Rota Financeira (fintech mobile · em construção, sem página ainda) -->
+          <article class="case reveal">
+            <div class="case__cover" aria-label="Rota Financeira">
+              <span class="cover-badge"><span class="pt">Em construção</span><span class="en">In progress</span></span>
+              <div class="stage">
+                <div class="mock mock--phone" style="--x:-14%;--y:0;--r:-8deg;--hx:-24%;--hr:-12deg;z-index:1">
+                  <div class="mock__scr"><div class="ph g-rota"></div></div>
+                </div>
+                <div class="mock mock--phone" style="--x:14%;--y:8%;--r:8deg;--hx:24%;--hr:12deg;z-index:2">
+                  <div class="mock__scr"><div class="ph g-rota"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <div>
+                <span class="case__no">04</span>
+                <h3 class="case__title">Rota Financeira</h3>
+                <p class="case__desc">
+                  <span class="pt">Gestão de despesas e manutenção para motoristas de aplicativo: dashboards financeiros e controle de custos.</span>
+                  <span class="en">Expense and maintenance management for ride-hailing drivers: financial dashboards and cost tracking.</span>
+                </p>
+              </div>
+              <span class="case__meta">Fintech · Mobile · 2024</span>
             </div>
           </article>
 
@@ -347,7 +350,7 @@
         </h2>
         <div class="cta__links" data-stagger>
           <!-- EDITAR: seu e-mail e redes -->
-          <a class="cta__mail reveal" data-magnetic href="mailto:comercialgabriellevitoria@gmail.com">comercialgabriellevitoria@gmail.com</a>
+          <a class="cta__mail reveal" href="mailto:comercialgabriellevitoria@gmail.com">comercialgabriellevitoria@gmail.com</a>
           <a class="cta__social reveal" href="https://www.linkedin.com/in/gabrielle-vit%C3%B3ria/" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="cta__social reveal" href="https://www.behance.net/gabriellevitria7" target="_blank" rel="noopener">Behance ↗</a>
         </div>

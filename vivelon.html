@@ -69,17 +69,19 @@
         <span class="en">A supplements e-commerce designed from catalog to loyalty — Home, product page, account and the ViveStars program.</span>
       </p>
 
-      <!-- IMAGEM PRINCIPAL: troque a .ph pela print da Home -->
+      <!-- IMAGEM PRINCIPAL: Home desktop com painel de conta + navegação mobile -->
       <div class="lead-shot reveal">
         <div class="browser">
           <div class="browser__bar">
             <i></i><i></i><i></i>
             <span class="browser__url">vivelon.pt</span>
           </div>
-          <div class="browser__scr">
-            <img src="assets/img/telas/vivelon-home-desktop.jpg" alt="Home da Vivelon em desktop">
+          <div class="browser__scr" style="aspect-ratio:2200/1661">
+            <img src="assets/img/telas/vivelon-home-detalhes.jpg" alt="Home da Vivelon em desktop com o painel de conta e navegação aberto">
           </div>
         </div>
+        <img class="lead-shot__phone" src="assets/img/telas/vivelon-navegacao-iphone.png"
+             alt="Menu de navegação da Vivelon em mobile" loading="lazy">
       </div>
     </section>
 
@@ -177,36 +179,33 @@
         <div class="prose reveal">
           <span class="mono lbl accent">04 · <span class="pt">Telas</span><span class="en">Screens</span></span>
           <h2><span class="pt">As telas principais.</span><span class="en">The key screens.</span></h2>
+          <p><span class="pt"><strong>90% dos usuários da Vivelon compram pelo celular</strong> — por isso todas as telas nascem mobile first.</span><span class="en"><strong>90% of Vivelon's users shop on mobile</strong> — so every screen is designed mobile first.</span></p>
         </div>
-        <!-- TELAS: exporte do Figma para assets/img/telas/ com os nomes abaixo
-             e troque cada .ph pela tag <img> comentada ao lado. -->
+        <!-- TELAS: mockups de iPhone gerados dos exports do Figma (assets/img/telas/vivelon-*-iphone.jpg) -->
         <div class="shots reveal">
-          <div class="shot shot--tall">
-            <div class="shot__scr">
-              <!-- <img src="assets/img/telas/vivelon-home-mobile.png" alt="Home da Vivelon em mobile"> -->
-              <div class="ph g-vivelon"><span>Home · Mobile</span></div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#E0DACD">
+              <img src="assets/img/telas/vivelon-home-iphone.jpg" alt="Home da Vivelon no smartphone">
             </div>
             <div class="shot__cap"><b>Home</b><span><span class="pt">Vitrine & categorias</span><span class="en">Storefront & categories</span></span></div>
           </div>
-          <div class="shot shot--tall">
-            <div class="shot__scr">
-              <!-- <img src="assets/img/telas/vivelon-plp-mobile.png" alt="Pesquisa e filtros da Vivelon em mobile"> -->
-              <div class="ph g-vivelon"><span>Pesquisa · Mobile</span></div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#E0DACD">
+              <img src="assets/img/telas/vivelon-roleta-iphone.jpg" alt="Roleta de prémios VivePontos no smartphone">
             </div>
-            <div class="shot__cap"><b><span class="pt">Pesquisa</span><span class="en">Search</span></b><span><span class="pt">Filtros & resultados</span><span class="en">Filters & results</span></span></div>
-          </div>
-          <div class="shot shot--tall">
-            <div class="shot__scr">
-              <!-- <img src="assets/img/telas/vivelon-vivebot.png" alt="ViveBot, o guia de escolhas da Vivelon"> -->
-              <div class="ph g-vivelon"><span>ViveBot</span></div>
-            </div>
-            <div class="shot__cap"><b>ViveBot</b><span><span class="pt">Guia de escolhas</span><span class="en">Choice guide</span></span></div>
+            <div class="shot__cap"><b>VivePontos</b><span><span class="pt">Roleta & gamificação</span><span class="en">Prize wheel & gamification</span></span></div>
           </div>
           <div class="shot shot--tall shot--fit">
-            <div class="shot__scr">
-              <img src="assets/img/telas/vivelon-roleta.png" alt="Roleta de prémios do programa de fidelidade">
+            <div class="shot__scr" style="background:#E0DACD">
+              <img src="assets/img/telas/vivelon-vivebot-chat-iphone.jpg" alt="Chat do ViveBot recomendando suplementos no smartphone">
             </div>
-            <div class="shot__cap"><b>VivePontos</b><span><span class="pt">Gamificação & fidelidade</span><span class="en">Gamification & loyalty</span></span></div>
+            <div class="shot__cap"><b>ViveBot</b><span><span class="pt">Chat que guia a escolha do suplemento</span><span class="en">Chat that guides supplement choice</span></span></div>
+          </div>
+          <div class="shot shot--tall shot--fit">
+            <div class="shot__scr" style="background:#E0DACD">
+              <img src="assets/img/telas/vivelon-evento-iphone.jpg" alt="Landing page do evento com o Running Club de Setúbal no smartphone">
+            </div>
+            <div class="shot__cap"><b>Running Club</b><span><span class="pt">Landing page · evento em parceria</span><span class="en">Landing page · partnership event</span></span></div>
           </div>
         </div>
       </div>
@@ -221,15 +220,16 @@
           <p><span class="pt">Para manter consistência e facilitar o handoff, organizei cores, tipografia e componentes num sistema reutilizável — o que aparece na tela vem sempre das mesmas peças.</span><span class="en">To keep consistency and ease handoff, I organized colors, typography and components into a reusable system — what shows on screen always comes from the same building blocks.</span></p>
         </div>
 
-        <!-- CORES — EDITAR: troque os hex e os "background" pelas cores reais da Vivelon -->
+        <!-- CORES — paleta real da Vivelon (amostrada das telas de alta fidelidade) -->
         <div class="ds-block reveal">
           <p class="ds-sub"><span class="pt">Cores</span><span class="en">Color</span></p>
           <div class="ds-sw">
-            <div class="sw"><div class="sw__chip" style="background:#2E6B4F"></div><div class="sw__meta"><b><span class="pt">Primária</span><span class="en">Primary</span></b><span>#2E6B4F</span></div></div>
-            <div class="sw"><div class="sw__chip" style="background:#8FBF9F"></div><div class="sw__meta"><b><span class="pt">Secundária</span><span class="en">Secondary</span></b><span>#8FBF9F</span></div></div>
-            <div class="sw"><div class="sw__chip" style="background:#F2A65A"></div><div class="sw__meta"><b><span class="pt">Destaque</span><span class="en">Accent</span></b><span>#F2A65A</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#539A07"></div><div class="sw__meta"><b><span class="pt">Primária</span><span class="en">Primary</span></b><span>#539A07</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#1D4F56"></div><div class="sw__meta"><b><span class="pt">Secundária</span><span class="en">Secondary</span></b><span>#1D4F56</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#903EAA"></div><div class="sw__meta"><b><span class="pt">Fidelidade</span><span class="en">Loyalty</span></b><span>#903EAA</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#F2B611"></div><div class="sw__meta"><b><span class="pt">Ofertas</span><span class="en">Offers</span></b><span>#F2B611</span></div></div>
             <div class="sw"><div class="sw__chip" style="background:#1C1B1A"></div><div class="sw__meta"><b><span class="pt">Tinta</span><span class="en">Ink</span></b><span>#1C1B1A</span></div></div>
-            <div class="sw"><div class="sw__chip" style="background:#F5F3EE;box-shadow:inset 0 0 0 1px var(--line)"></div><div class="sw__meta"><b><span class="pt">Fundo</span><span class="en">Surface</span></b><span>#F5F3EE</span></div></div>
+            <div class="sw"><div class="sw__chip" style="background:#FFFCF3;box-shadow:inset 0 0 0 1px var(--line)"></div><div class="sw__meta"><b><span class="pt">Fundo</span><span class="en">Surface</span></b><span>#FFFCF3</span></div></div>
           </div>
         </div>
 
@@ -248,24 +248,132 @@
           </div>
         </div>
 
-        <!-- COMPONENTES -->
+        <!-- COMPONENTES — organizados num container que lembra o canvas do Figma -->
         <div class="ds-block reveal">
           <p class="ds-sub"><span class="pt">Componentes</span><span class="en">Components</span></p>
-          <div class="ds-comp">
-            <div class="cmp">
-              <span class="cmp__lbl"><span class="pt">Botão</span><span class="en">Button</span></span>
-              <button class="u-btn" type="button"><span class="pt">Adicionar ao carrinho</span><span class="en">Add to cart</span></button>
-              <button class="u-btn u-btn--ghost" type="button"><span class="pt">Ver detalhes</span><span class="en">View details</span></button>
+          <div class="figc">
+            <div class="figc__field figc__field--tall">
+              <em>❖ botões · modificadores</em>
+              <div>
+                <div class="spec-row"><em>Icon · left</em>
+                  <button class="vb vb--pri" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1.2 10.5a2 2 0 0 1-2 1.5H9.2a2 2 0 0 1-2-1.5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="pt">Comprar agora</span><span class="en">Buy now</span></button>
+                  <button class="vb vb--out" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><span class="pt">Favoritar</span><span class="en">Favorite</span></button>
+                </div>
+                <div class="spec-row"><em>Icon · right</em>
+                  <button class="vb vb--pri" type="button"><span class="pt">Continuar</span><span class="en">Continue</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+                  <button class="vb vb--link" type="button"><span class="pt">Ver mais</span><span class="en">See more</span> ›</button>
+                </div>
+                <div class="spec-row"><em>Icon · both</em>
+                  <button class="vb vb--pri" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 11h10.2L20 8H7"/></svg><span class="pt">Finalizar</span><span class="en">Checkout</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+                </div>
+                <div class="spec-row"><em>Icon · only</em>
+                  <button class="vb vb--pri vb--round" type="button" aria-label="Carrinho"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 11h10.2L20 8H7"/></svg></button>
+                  <button class="vb vb--ter vb--round" type="button" aria-label="Favoritar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></button>
+                  <button class="vb vb--ter vb--round" type="button" aria-label="Avançar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+                </div>
+                <div class="spec-row"><em>Full-width</em>
+                  <div class="figc__stack" style="flex:1;align-items:stretch">
+                    <button class="vb vb--pri vb--full" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 11h10.2L20 8H7"/></svg><span class="pt">Adicionar ao carrinho</span><span class="en">Add to cart</span></button>
+                    <button class="vb vb--sec vb--full" type="button"><span class="pt">Comprar com 1-click</span><span class="en">Buy in 1-click</span></button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cmp">
-              <span class="cmp__lbl"><span class="pt">Campo</span><span class="en">Input</span></span>
-              <span class="u-input"><span class="pt">email@exemplo.pt</span><span class="en">email@example.pt</span></span>
-              <span class="u-input">••••••••</span>
+            <div class="figc__field figc__field--tall">
+              <em>❖ card-produto</em>
+              <div class="u-pcard" style="margin-inline:auto">
+                <div class="u-pcard__top">
+                  <div class="u-pcard__tags">
+                    <span class="vg vg--amb"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13l-7 7-9-9V4h7l9 9z"/><circle cx="8.5" cy="8.5" r="1" fill="currentColor"/></svg><span class="pt">Mais vendido</span><span class="en">Best seller</span></span>
+                    <span class="vg vg--org"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13l-7 7-9-9V4h7l9 9z"/><circle cx="8.5" cy="8.5" r="1" fill="currentColor"/></svg>-30%</span>
+                  </div>
+                  <div class="u-pcard__acts">
+                    <span class="u-pcard__fav" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></span>
+                    <span class="u-pcard__fav" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+                  </div>
+                </div>
+                <div class="u-pcard__img"><img src="assets/img/telas/vivelon-produto.jpg" alt="Frasco de Magnésio Di Malato" loading="lazy"></div>
+                <div class="u-pcard__body">
+                  <b>Magnésio Bisglicinato 300 · 60 cápsulas</b>
+                  <span class="u-pcard__sub"><span class="pt">Apoio ao sono e relaxamento...</span><span class="en">Sleep and relaxation support...</span></span>
+                  <span class="u-pcard__stars">★★★★★ <i>4,8 (1.284)</i></span>
+                  <div class="u-pcard__price"><strong>€14,90</strong><s>€24,90</s></div>
+                  <span class="u-pcard__save"><span class="pt">Poupa €10</span><span class="en">Save €10</span></span>
+                  <span class="u-pcard__pts">★ <span class="pt">Ganha +15 VivePontos</span><span class="en">Earn +15 VivePontos</span></span>
+                  <span class="u-pcard__bar"><i></i></span>
+                  <span class="u-pcard__stock"><span><span class="pt">Vendidos:</span><span class="en">Sold:</span> <b>78</b></span><span class="is-left"><span class="pt">Restam:</span><span class="en">Left:</span> <b>22</b></span></span>
+                  <button class="u-btn u-btn--sm u-btn--cta" type="button" style="background:#539A07"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 11h10.2L20 8H7"/></svg><span class="pt">Adicionar</span><span class="en">Add</span></button>
+                </div>
+              </div>
             </div>
-            <div class="cmp">
-              <span class="cmp__lbl"><span class="pt">Etiquetas</span><span class="en">Badges</span></span>
-              <span class="u-badge"><span class="pt">Novo</span><span class="en">New</span></span>
-              <span class="u-badge">ViveStars</span>
+            <div class="figc__field">
+              <em>❖ botões · estados</em>
+              <div>
+                <div class="spec-row"><em>Primary · green</em>
+                  <button class="vb vb--pri" type="button">Default</button>
+                  <button class="vb vb--pri st-hover" type="button">Hover</button>
+                  <button class="vb vb--pri st-focus" type="button">Focus</button>
+                  <button class="vb vb--pri st-pressed" type="button">Pressed</button>
+                  <button class="vb vb--pri st-dis" type="button">Disabled</button>
+                </div>
+                <div class="spec-row"><em>Secondary · purple</em>
+                  <button class="vb vb--sec" type="button">Default</button>
+                  <button class="vb vb--sec st-hover" type="button">Hover</button>
+                  <button class="vb vb--sec st-dis" type="button">Disabled</button>
+                </div>
+                <div class="spec-row"><em>Tertiary · green</em>
+                  <button class="vb vb--ter" type="button">Default</button>
+                  <button class="vb vb--ter st-hover" type="button">Hover</button>
+                  <button class="vb vb--ter st-dis" type="button">Disabled</button>
+                </div>
+              </div>
+            </div>
+            <div class="figc__field">
+              <em>❖ card-avaliação</em>
+              <div class="u-review" style="margin-inline:auto">
+                <span class="u-review__quote">❝</span>
+                <p><span class="pt">A Vivelon tem os melhores suplementos para performance. Notei a diferença nos meus treinos!</span><span class="en">Vivelon has the best performance supplements. I noticed the difference in my training!</span></p>
+                <span class="u-review__stars">★★★★★</span>
+                <b>João Silva</b>
+                <span class="role"><span class="pt">Corredor regular</span><span class="en">Regular runner</span></span>
+              </div>
+            </div>
+            <div class="figc__field figc__field--wide">
+              <em>❖ etiquetas · grupos</em>
+              <div>
+                <div class="spec-row"><em>Oferta · <span class="pt">Urgência</span><span class="en">Urgency</span></em>
+                  <span class="vg vg--org">◷ <span class="pt">Por pouco tempo</span><span class="en">Limited time</span></span>
+                  <span class="vg vg--org"><span class="pt">Oferta relâmpago</span><span class="en">Flash sale</span></span>
+                  <span class="vg vg--org"><span class="pt">Últimas unidades</span><span class="en">Last units</span></span>
+                </div>
+                <div class="spec-row"><em>Oferta · <span class="pt">Desconto</span><span class="en">Discount</span></em>
+                  <span class="vg vg--org">2x1</span>
+                  <span class="vg vg--org">-30%</span>
+                  <span class="vg vg--org">Promo</span>
+                </div>
+                <div class="spec-row"><em>Produto · Bestseller</em>
+                  <span class="vg vg--amb">Top 1</span>
+                  <span class="vg vg--amb"><span class="pt">Mais vendido</span><span class="en">Best seller</span></span>
+                  <span class="vg vg--amb">♡ <span class="pt">Favorito</span><span class="en">Favorite</span></span>
+                </div>
+                <div class="spec-row"><em>Produto · <span class="pt">Novidade</span><span class="en">New</span></em>
+                  <span class="vg vg--grn">✦ <span class="pt">Novidade</span><span class="en">New in</span></span>
+                  <span class="vg vg--grn">✦ <span class="pt">Lançamento</span><span class="en">Launch</span></span>
+                </div>
+                <div class="spec-row"><em><span class="pt">Confiança</span><span class="en">Trust</span></em>
+                  <span class="vg vg--teal">✓ 100% Natural</span>
+                  <span class="vg vg--teal">✓ <span class="pt">Certificado</span><span class="en">Certified</span></span>
+                  <span class="vg vg--teal">Vegan</span>
+                </div>
+                <div class="spec-row"><em>VivePontos</em>
+                  <span class="vg vg--lav">✦ +2x <span class="pt">Pontos</span><span class="en">Points</span></span>
+                  <span class="vg vg--lav"><span class="pt">Bónus VivePontos</span><span class="en">VivePontos bonus</span></span>
+                </div>
+                <div class="spec-row"><em><span class="pt">Envio</span><span class="en">Shipping</span></em>
+                  <span class="vg vg--pur"><span class="pt">Envio grátis</span><span class="en">Free shipping</span></span>
+                  <span class="vg vg--pur"><span class="pt">Envio 24h</span><span class="en">24h shipping</span></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,11 +417,12 @@
         <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)"><span class="pt">O que usei</span><span class="en">What I used</span></h2>
         <div class="tools">
           <span>Figma</span>
-          <span>Design System</span>
           <span>Auto-layout</span>
-          <span><span class="pt">Protótipo</span><span class="en">Prototype</span></span>
-          <!-- EDITAR: troque o # pela URL do site publicado da Vivelon -->
-          <a href="#" target="_blank" rel="noopener"><span class="pt">Site publicado ↗</span><span class="en">Live site ↗</span></a>
+          <span>Atomic Design System</span>
+          <span>Heatmaps</span>
+          <span><span class="pt">Mapa de empatia</span><span class="en">Empathy map</span></span>
+          <span>Personas</span>
+          <a href="https://vivelon.com/" target="_blank" rel="noopener"><span class="pt">Site publicado ↗</span><span class="en">Live site ↗</span></a>
         </div>
       </div></div>
     </section>

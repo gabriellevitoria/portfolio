@@ -10,9 +10,15 @@ const FINE = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
 (function(){
   const root = document.documentElement;
   const btns = document.querySelectorAll('.lang button');
+  const cv = document.querySelector('.nav__cv');
   function setLang(l){
     root.dataset.lang = l; root.lang = l;
     btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === l)));
+    // CV bilíngue: aponta o link pro PDF do idioma ativo (PT/EN)
+    if(cv){
+      const href = l === 'en' ? cv.dataset.cvEn : cv.dataset.cvPt;
+      if(href) cv.setAttribute('href', href);
+    }
     try{ localStorage.setItem('lang', l); }catch(e){}
   }
   let saved; try{ saved = localStorage.getItem('lang'); }catch(e){}
@@ -107,5 +113,16 @@ const FINE = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
   burger.addEventListener('click', ()=>{
     const work = document.getElementById('work');
     if(work) work.scrollIntoView({behavior: REDUCED?'auto':'smooth'});
+  });
+})();
+
+/* ---------- Voltar ao topo (links #top: marca + rodapé) ---------- */
+(function(){
+  document.querySelectorAll('a[href="#top"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      window.scrollTo({top:0, behavior: REDUCED?'auto':'smooth'});
+      history.replaceState(null, '', location.pathname + location.search);
+    });
   });
 })();
